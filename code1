@@ -1,0 +1,58 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+#define int long long
+signed main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+int z;
+cin>>z;
+int sum=0;
+while(z--)
+{
+int n;
+cin>>n;
+if(n>45) cout<<-1<<endl;
+else{
+    if(n<10) cout<<n<<endl;
+    else{
+        if(n<18 and n>9)
+        {
+            cout<<n%9<<9<<endl;
+        }
+        if(n<=24 and n>17)
+        {
+            cout<<n%17<<89<<endl;
+        }
+        if(n<=30 and n>24)
+        {
+            cout<<n%24<<789<<endl;
+        }
+        if(n<=35 and n>30)
+        {
+            cout<<n%30<<6789<<endl;
+        }
+        if(n<=39 and n>35)
+        {
+            cout<<n%35<<56789<<endl;
+        }
+        if(n<=42 and n>39)
+        {
+            cout<<n%39<<456789<<endl;
+        }
+        if(n<=44 and n>42)
+        {
+            cout<<n%42<<3456789<<endl;
+        }
+        if(n==45)
+        {
+            cout<<123456789<<endl;
+        }
+ 
+ 
+    }
+}
+}
+    return 0;
+}
